@@ -1,16 +1,9 @@
-#(©)CodeXBotz
-
-
-
-
 import os
 import logging
 from logging.handlers import RotatingFileHandler
 
-
-
-#Bot token @Botfathera
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5832775404:AAHcOcw0PE4HoO3y1iEfu4osHf7VQLOJqD8")
+#Bot token @Botfather
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5714275959:AAFxGSvcgYbuHqDH5UeNRYDg7qhvGRswW9s")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "6216349"))
@@ -19,34 +12,31 @@ APP_ID = int(os.environ.get("APP_ID", "6216349"))
 API_HASH = os.environ.get("API_HASH", "5c7418e9f3df6db931caa7354521c55f")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001882031684"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001682431671"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1850233338"))
-
-#Port
-PORT = os.environ.get("PORT", "1230")
+OWNER_ID = int(os.environ.get("OWNER_ID", "1289438071"))
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://akusiapa:akusiapa@cluster0.3rh8jbk.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "makanmasako")
+DB_URI = os.environ.get("DATABASE_URL", "postgres://fbnufegkpayclg:0a8759364af65325709f33ab5ed8fa3964088adc5d0f8ae75ef141174e3ee51c@ec2-3-225-213-67.compute-1.amazonaws.com:5432/d3srfpfnrnmeh9")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001832266801"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001625755969"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001152957163"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nSaya Dapat Menyimpan File Pribadi Dan Pengguna Lain Dapat Mengaksesnya Dari Tautan Khusus.")
+START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "").split()):
+    for x in (os.environ.get("ADMINS", "1289438071 5084234580").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>Anda harus bergabung di Channel/Group Untuk Menggunakan Saya\n\nSilakan Bergabung Terlebih Dahulu</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
@@ -59,9 +49,6 @@ if os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True':
     DISABLE_CHANNEL_BUTTON = True
 else:
     DISABLE_CHANNEL_BUTTON = False
-
-BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "❌ Jangan Kirimi Saya Pesan Secara Langsung. Saya Hanya Bisa Digunakan Admin channel!"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1250450587)
