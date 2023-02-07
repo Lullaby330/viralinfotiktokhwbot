@@ -3,7 +3,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5839783138:AAHO4kgZF-T8DXDJJ3rH5TkJy5Az4gNYM7w")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5917716839:AAGiErijUWejySbiWJ9dR4h3faU8vzIv_hQ")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "6216349"))
@@ -12,17 +12,17 @@ APP_ID = int(os.environ.get("APP_ID", "6216349"))
 API_HASH = os.environ.get("API_HASH", "5c7418e9f3df6db931caa7354521c55f")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001810609600"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001804957027"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "1289438071"))
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "postgres://ztaoqfvitliwqh:7833601cf80075df8359a34a803f90cab026347d8d0e708d46912d9eef548979@ec2-52-21-136-176.compute-1.amazonaws.com:5432/dev8cpo3q01l7g")
+DB_URI = os.environ.get("DATABASE_URL", "postgres://bxrstsgsznhyra:cf759352513695ab583d8dcc97615038b674cb8b5f91a145a412f63ad920a2a6@ec2-3-224-125-117.compute-1.amazonaws.com:5432/dc59p2e1ujjs3v")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001602189104"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001218103395"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001867350228"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001157268479"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -30,7 +30,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1289438071 5084234580 1218103395").split()):
+    for x in (os.environ.get("ADMINS", "1985010358 6159643707 5084234580").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
