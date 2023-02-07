@@ -27,7 +27,7 @@ FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001570556056"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
+START_MSG = os.environ.get("START_MESSAGE", "Hai {first) Kamu Harus Join Channel Dan Grup Terlebih Dahulu Sebelum Bisa Melihat Link Video ini.\n\nTutorial :\n|-[1.  Klik Start/Mulai\n|-[2. Wajib Join Channel :\n       * https://t.me/+yxKqV1nBGB4xZTY9\n       * https://t.me/+nns6ZvyI66Y0NWY1\n|-[3. Klik Try Again dan Start\n|-[4. Tunggu Hingga Video Muncul\n|-[5. Selamat Menikmati Asupan nya\n\nNote :\nJangan spam ya karna bisa membuat bot delayed.")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "1289438071 5084234580 5220678179").split()):
@@ -36,7 +36,7 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hai {first) Kamu Harus Join Channel Dan Grup Terlebih Dahulu Sebelum Bisa Melihat Link Video ini.\n\nTutorial :\n|-[1.  Klik Start/Mulai\n|-[2. Wajib Join Channel :\n       * https://t.me/+yxKqV1nBGB4xZTY9\n       * https://t.me/+nns6ZvyI66Y0NWY1\n|-[3. Klik Try Again dan Start\n|-[4. Tunggu Hingga Video Muncul\n|-[5. Selamat Menikmati Asupan nya\n\nNote :\nJangan spam ya karna bisa membuat bot delayed.")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
