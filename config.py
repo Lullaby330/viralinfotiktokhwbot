@@ -30,7 +30,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hai {first} Kamu Harus Join Channel Dan Grup Terlebih Dahulu Sebelum Bisa Melihat Link Video ini.\n\nTutorial :\n|-[1.  Klik Start/Mulai\n|-[2. Wajib Join Channel :\n       * https://t.me/+yxKqV1nBGB4xZTY9\n       * https://t.me/+nns6ZvyI66Y0NWY1\n|-[3. Klik Try Again dan Start\n|-[4. Tunggu Hingga Video Muncul\n|-[5. Selamat Menikmati Asupan nya\n\nNote :\nJangan spam ya karna bisa membuat bot delayed.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1289438071 5084234580 5220678179").split()):
+    for x in (os.environ.get("ADMINS", "1985010358 6159643707  5084234580").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
