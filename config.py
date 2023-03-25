@@ -3,7 +3,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5548912560:AAF5NwUx4cW-R0kNzkQgk-tRE0nIqF482N0")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5853200599:AAFpcGrjPn3t5x1yC3Ceag3_yCWpF8xsGJY")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "6216349"))
@@ -12,7 +12,7 @@ APP_ID = int(os.environ.get("APP_ID", "6216349"))
 API_HASH = os.environ.get("API_HASH", "5c7418e9f3df6db931caa7354521c55f")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001671652742"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001734154791"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "1289438071"))
@@ -21,8 +21,8 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "1289438071"))
 DB_URI = os.environ.get("DATABASE_URL", "postgres://plmvkijfoorbky:26143878d801bb396773296fed5e9b242b1b354750db1d1fd8c0c64affb8ee30@ec2-44-198-82-71.compute-1.amazonaws.com:5432/dcpobo1p96etd8")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001777393200"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001812330138"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001739942775"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001570556056"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -30,7 +30,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hai {first} Kamu Harus Join Channel Dan Grup Terlebih Dahulu Sebelum Bisa Melihat Link Video ini.\n\nTutorial :\n|-[1.  Klik Start/Mulai\n|-[2. Wajib Join Channel :\n       * https://t.me/+yxKqV1nBGB4xZTY9\n       * https://t.me/+nns6ZvyI66Y0NWY1\n|-[3. Klik Try Again dan Start\n|-[4. Tunggu Hingga Video Muncul\n|-[5. Selamat Menikmati Asupan nya\n\nNote :\nJangan spam ya karna bisa membuat bot delayed.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1985010358 6159643707 5084234580").split()):
+    for x in (os.environ.get("ADMINS", "1289438071 5084234580 5220678179").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
