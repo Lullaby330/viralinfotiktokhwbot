@@ -3,7 +3,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5940916710:AAF0p2gCSrSHZSuA3Nh6RH7P6no4cjfeOo8")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6234240603:AAGjmcG6rfCaHYq99at2iyFGadh8B14m_n8")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "6216349"))
@@ -12,17 +12,17 @@ APP_ID = int(os.environ.get("APP_ID", "6216349"))
 API_HASH = os.environ.get("API_HASH", "5c7418e9f3df6db931caa7354521c55f")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001818124060"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001832779069"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "1289438071"))
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "postgres://plmvkijfoorbky:26143878d801bb396773296fed5e9b242b1b354750db1d1fd8c0c64affb8ee30@ec2-44-198-82-71.compute-1.amazonaws.com:5432/dcpobo1p96etd8")
+DB_URI = os.environ.get("DATABASE_URL", "postgres://sendydewals:agW9OTr3FPlE@ep-rapid-violet-017057.us-east-2.aws.neon.tech/Datasql")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001633883860"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001640315836"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001691481971"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001961327286"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
