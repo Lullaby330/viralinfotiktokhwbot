@@ -26,7 +26,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "1289438071"))
 
 #Database 
 
-DB_URI = os.environ.get("DATABASE_URL", "postgres://plmvkijfoorbky:26143878d801bb396773296fed5e9b242b1b354750db1d1fd8c0c64affb8ee30@ec2-44-198-82-71.compute-1.amazonaws.com:5432/dcpobo1p96etd8")
+DB_URI = os.environ.get("DATABASE_URL", "postgres://fvusupdb:ujhO0x8fEhKnkig0BYgcc2kEXezcmrT4@arjuna.db.elephantsql.com/fvusupdb")
 
 #force sub channel id, if you want enable force sub
 
